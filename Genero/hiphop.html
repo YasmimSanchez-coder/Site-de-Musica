@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hip-Hop - Sonho em notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hip-Hop</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="trap.html">Trap</a></li>
+                <li><a href="phonk.html">Phonk</a></li>
+                <li><a href="rap.html">Rap</a></li>
+                <li><a href="eletronica.html">Eletrônica</a></li>
+                <li><a href="hiphop.html">Hip-Hop</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Lista de Músicas de Hip-Hop</h2>
+        <div class="music-list">
+            <ul>
+                <li><a href="#" onclick="playMusic('hiphop1.mp3')">Música Hip-Hop 1</a></li>
+                <li><a href="#" onclick="playMusic('hiphop2.mp3')">Música Hip-Hop 2</a></li>
+                <li><a href="#" onclick="playMusic('hiphop3.mp3')">Música Hip-Hop 3</a></li>
+            </ul>
+        </div>
+        <div class="music-player">
+            <audio controls id="audio-player"></audio>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sonho em Notas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function playMusic(music) {
+            const player = document.getElementById('audio-player');
+            player.src = music;
+            player.play();
+        }
+    </script>
+</body>
+
+</html>
